@@ -127,7 +127,8 @@ document.addEventListener("DOMContentLoaded", () => {
         await getWorks();
         await getCategories();
         createWorks(works);
-        if (!token) createFilters(categories);
+        if (!token) 
+            createFilters(categories);
     }
 
     init();
@@ -156,6 +157,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (galleryPage) galleryPage.classList.remove("hidden");
         if (formPage) formPage.classList.add("hidden");
         if (modalBack) modalBack.classList.add("hidden");
+
+        // REINITIALISE L'ETAT DU FORMULAIRE 
 
         if (preview) preview.classList.add("hidden");
         if (uploadPlaceholder) uploadPlaceholder.classList.remove("hidden");
