@@ -57,7 +57,7 @@ async function login(email, password) {
 }
 
 
-// ===== AFFICHAGE ERREUR =====
+// ===== AFFICHAGE ERREUR ====
 
 function afficherErreur(message) {
 
