@@ -13,7 +13,7 @@
 </head>
 <body>
 	
-    <!-- Bandeau mode édition -->
+   <!--  BANDEAU MODE ÉDITION (si connecté) -->
 
     <div id="edition-banner">
   <i class="fa-regular fa-pen-to-square"></i>
@@ -23,7 +23,8 @@
 <header>
   
     <h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
-    <nav>
+     <!-- MENU NAVIGATION  -->
+      <nav>
       <ul>
         <li>projets</li>
         <li>contact</li>
@@ -37,10 +38,13 @@
 </header>
 
 <main>
+    <!-- SECTION INTRODUCTION =-->
+
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="Portrait de Sophie Bluel, architecte d'intérieur">
 		</figure>
+        <!-- TEXTE DE PRESENTATION -->
 		<article>
 			<h2>Designer d'espace</h2>
 			<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
@@ -50,7 +54,7 @@
 	</section>
 	<section id="portfolio">
 
-		<!-- Bouton modifier -->
+		<!-- BOUTON MODIIER -->
 
             <h2>Mes projets</h2>
 <button type="button" id="btn-edit" class="btn-edit">
@@ -61,7 +65,7 @@
 		<div class="gallery"></div>
 	</section>
 
-	<!-- Formulaire de contact -->
+	<!-- FORMULAIRE CONTACT -->
 	 
 	<section id="contact">
 		<h2>Contact</h2>
@@ -97,7 +101,7 @@
     <div class="modal-overlay"></div>
     <div class="modal-content">
 
-        <!-- Boutons retour / fermer -->
+        <!-- BOUTONS RETOUR / FERMER -->
         <button type="button" class="modal-back hidden" aria-label="Retour">
             <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
         </button>
@@ -133,17 +137,17 @@
                     <input type="file" id="file-input" accept="image/*" hidden>
                 </div>
 
-                <!-- TITRE -->
+                <!-- CHAMP TITRE -->
                 <label for="title-input">Titre</label>
                 <input type="text" id="title-input" required>
 
-                <!-- CATÉGORIE -->
+                <!-- CHAMP CATÉGORIE -->
                 <label for="category-input">Catégorie</label>
                 <select id="category-input" required>
                     <option value=""></option>
                 </select>
 
-                <!-- VALIDATION -->
+                <!-- BOUTON DE VALIDATION -->
                 <hr class="trait-separateur">
                 <button type="submit" class="btn-validate" disabled>Valider</button>
             </form>
@@ -154,7 +158,8 @@
 
         </div>
     </div>
-
+<!--  SCRIPT JS -->
+    
 <script src="./assets/main.js"></script>
 
 </body>
